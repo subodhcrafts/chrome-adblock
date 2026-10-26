@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 240px; margin: 0; padding: 14px; font: 13px system-ui, sans-serif; }
+    h1 { font-size: 15px; margin: 0 0 10px; }
+    .row { display: flex; justify-content: space-between; align-items: center; margin: 10px 0; }
+    #host { color: #555; word-break: break-all; }
+    button { width: 100%; padding: 8px; border: 0; border-radius: 6px; cursor: pointer; font-weight: 600; }
+    #siteBtn { background: #1976d2; color: #fff; }
+    #note { color: #888; font-size: 11px; margin-top: 8px; }
+    hr { border: 0; border-top: 1px solid #eee; margin: 12px 0; }
+    .small { color: #666; font-size: 11px; }
+    #scamBtn { background: #d32f2f; color: #fff; }
+    #scamBtn:disabled { background: #ccc; cursor: default; }
+  </style>
+</head>
+<body>
+  <h1>Simple AdBlock</h1>
+  <div class="row">
+    <label for="enabled">Blocking enabled</label>
+    <input type="checkbox" id="enabled">
+  </div>
+  <div id="host"></div>
+  <div class="row"><button id="siteBtn"></button></div>
+  <div id="note">Reload the page to apply changes.</div>
+  <hr>
+  <div class="row"><b>Scam protection</b><span id="scamState"></span></div>
+  <div id="scamInfo" class="small"></div>
+  <div class="row"><button id="scamBtn">Report &amp; block as scam</button></div>
+  <a href="#" id="settings" class="small">Settings &amp; block lists</a>
+  <script src="popup.js"></script>
+</body>
+</html>

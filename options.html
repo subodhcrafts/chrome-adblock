@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simple AdBlock settings</title>
+  <style>
+    body { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; font: 14px/1.5 system-ui, sans-serif; color: #222; }
+    h1 { font-size: 22px; }
+    h2 { font-size: 16px; margin-top: 32px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+    .list { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+    .list input { margin-top: 4px; }
+    .meta { color: #666; font-size: 12px; }
+    .err { color: #c62828; font-size: 12px; }
+    .site { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #f0f0f0;
+            font-family: ui-monospace, monospace; }
+    .empty { color: #888; }
+    button { padding: 6px 12px; border-radius: 6px; border: 1px solid #ccc; background: #fff; cursor: pointer; }
+    button.primary { background: #1976d2; color: #fff; border-color: #1976d2; }
+    .row { display: flex; gap: 8px; align-items: center; margin: 10px 0; flex-wrap: wrap; }
+    input[type=text] { flex: 1; min-width: 200px; padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; }
+    #status { color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Simple AdBlock settings</h1>
+
+  <h2>Scam protection</h2>
+  <label class="row"><input type="checkbox" id="scamProtection"> Block known scam, phishing and malware sites, and warn me about suspicious ones</label>
+  <div id="ruleError" class="err"></div>
+
+  <h2>Global threat lists</h2>
+  <p class="meta">Downloaded from public threat-intelligence projects and refreshed every 12 hours.</p>
+  <div id="lists"></div>
+  <div class="row"><button class="primary" id="updateNow">Update lists now</button><span id="status"></span></div>
+
+  <h2>Sites you blocked</h2>
+  <div class="row"><input type="text" id="addDomain" placeholder="example.com"><button id="addBtn">Block site</button></div>
+  <div id="userBlocked"></div>
+
+  <h2>Sites you trust</h2>
+  <p class="meta">These are never blocked or flagged by scam protection.</p>
+  <div id="trusted"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>

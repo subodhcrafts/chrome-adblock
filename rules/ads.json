@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "doubleclick.net",
+        "googlesyndication.com",
+        "googleadservices.com",
+        "google-analytics.com",
+        "googletagservices.com",
+        "adservice.google.com",
+        "pagead2.googlesyndication.com",
+        "imasdk.googleapis.com",
+        "adnxs.com",
+        "adsrvr.org",
+        "advertising.com",
+        "amazon-adsystem.com",
+        "criteo.com",
+        "criteo.net",
+        "taboola.com",
+        "outbrain.com",
+        "pubmatic.com",
+        "rubiconproject.com",
+        "openx.net",
+        "casalemedia.com",
+        "scorecardresearch.com",
+        "quantserve.com",
+        "moatads.com",
+        "adform.net",
+        "smartadserver.com",
+        "yieldmo.com",
+        "sharethrough.com",
+        "teads.tv",
+        "bidswitch.net",
+        "contextweb.com",
+        "33across.com",
+        "media.net",
+        "zedo.com",
+        "revcontent.com",
+        "mgid.com",
+        "popads.net",
+        "popcash.net",
+        "propellerads.com",
+        "adsterra.com",
+        "exoclick.com",
+        "juicyads.com",
+        "trafficjunky.net",
+        "hotjar.com",
+        "adcolony.com",
+        "applovin.com",
+        "unityads.unity3d.com",
+        "ads.yahoo.com",
+        "ads.twitter.com",
+        "ads-twitter.com",
+        "analytics.twitter.com",
+        "ads.linkedin.com",
+        "connect.facebook.net",
+        "an.facebook.com",
+        "bat.bing.com",
+        "ads.tiktok.com",
+        "analytics.tiktok.com",
+        "serving-sys.com",
+        "adroll.com",
+        "doubleverify.com",
+        "adsafeprotected.com",
+        "3lift.com",
+        "indexww.com",
+        "lijit.com",
+        "sovrn.com",
+        "gumgum.com",
+        "zemanta.com",
+        "nativeads.com",
+        "infolinks.com",
+        "buysellads.com",
+        "carbonads.net",
+        "adzerk.net",
+        "2mdn.net",
+        "admob.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "image",
+        "sub_frame",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "stylesheet",
+        "websocket",
+        "font",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "[/._-](adserver|adsbygoogle|prebid|ad_banner|adframe|pagead)[/._-]",
+      "resourceTypes": [
+        "script",
+        "image",
+        "sub_frame",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "popads.net",
+        "popcash.net",
+        "propellerads.com",
+        "adsterra.com",
+        "exoclick.com",
+        "juicyads.com",
+        "trafficjunky.net",
+        "onclickads.net",
+        "onclkds.com",
+        "popmyads.com",
+        "adcash.com",
+        "hilltopads.net",
+        "clickadu.com",
+        "galaksion.com",
+        "admaven.com",
+        "ad-maven.com",
+        "richads.com",
+        "evadav.com",
+        "pushground.com",
+        "monetag.com",
+        "a-ads.com",
+        "clickaine.com",
+        "trafficstars.com",
+        "zeropark.com",
+        "plugrush.com",
+        "adspyglass.com",
+        "popunder.net",
+        "popunderjs.com",
+        "adskeeper.com",
+        "pushame.com",
+        "adblocker-aio.info",
+        "kingdompoongee.com",
+        "subduepaler.cyou"
+      ],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "kingdompoongee.com",
+        "subduepaler.cyou",
+        "analytics.vidshows.xyz"
+      ],
+      "resourceTypes": [
+        "script",
+        "image",
+        "sub_frame",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "stylesheet",
+        "websocket",
+        "font",
+        "other"
+      ]
+    }
+  }
+]
